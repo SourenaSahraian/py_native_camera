@@ -19,8 +19,7 @@ app = Flask(__name__)
 capture = cv.CaptureFromCAM(0)
 
 def my_thread():
-    img = cv.QueryFrame(capture)
-    cv.SaveImage(str(1)+".jpeg", img)  # actually save the image
+
     while True:
         video_capture.save_image(cv,5,capture)
         break
